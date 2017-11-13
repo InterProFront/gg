@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: @defaultFont;
+  text-decoration: none;
+  &:focus, &:hover{
+    outline: none
+  }
+}
+.g-recaptcha {
+  display: none;
+}
+.wrapper{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/*core folder*/
+@import 'core/variable';
+@import 'core/mixins';
+@import 'core/text';
+
+@import "desktop/header";
+@import "desktop/hand-gift";
+@import "desktop/about";
+@import "desktop/how-we-work";
+@import "desktop/conditions";
+@import "desktop/clients";
+@import "desktop/portfolio";
+@import "desktop/footer";
+@import "desktop/callback";
+
+
+@import "other/fotorama";
+@import "other/popup";

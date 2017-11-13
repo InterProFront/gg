@@ -1,0 +1,28 @@
+@media screen and(max-width: 1000px){
+  .about{
+	padding: 0 20px;
+	box-sizing: border-box;
+  }
+}
+@media screen and(max-width: 930px){
+  .about{
+	&__block-wrap{
+	  flex-direction: column;
+	  &--reverse{
+		.about__text{
+		  h4{
+			max-width: 100%;
+		  }
+		  max-width: 100%;
+		  width: 100%;
+		  margin-left:0;
+		}
+	  }
+	}
+	&__text{
+	  max-width: 100%;
+	  width: 100%;
+	  margin-left:0;
+	}
+  }
+}

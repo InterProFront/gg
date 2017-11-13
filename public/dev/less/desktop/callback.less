@@ -1,0 +1,112 @@
+.callback{
+  max-width: 100%;
+  &--inline{
+	max-width: 500px;
+	margin: 0 auto 40px;
+	.callback__title{
+	  font-size: 24px;
+	  max-width: 500px;
+	  line-height:1.2;
+	}
+	.callback__form{
+	  margin-top: 30px;
+	}
+	.callback__field{
+	  margin: 0 auto 20px;
+	  position: relative;
+	  max-width: 340px;
+	}
+	.callback__field-title{
+	  position: absolute;
+	  right: 100%;
+	  display: inline-block;
+	  width: 160px;
+	  text-align: right;
+	  box-sizing: border-box;
+	  padding-right: 20px;
+	  top: 15px;
+	  font-family: @MerriBold;
+	  font-size: 18px;
+	}
+	.input{
+	  &--textarea{
+		height: 120px;
+	  }
+	  font-size: 24px;
+	  padding: 10px 5px;
+	}
+  }
+  &__error{
+	text-align: center;
+	font-family: @MerriItalic;
+	font-size: 14px;
+	color: #666666;
+	padding-top: 10px;
+	opacity: 0;
+	&--show{
+	  opacity: 1;
+
+	}
+  }
+  &__title{
+	font-family: @MerriBold;
+	font-size: 18px;
+	color: #333333;
+	text-align: center;
+	max-width: 400px;
+	margin: 0 auto;
+  	font-weight: normal;
+  }
+  &__field{
+	margin-top: 20px;
+  }
+  &__field-title{
+	color: #666666;
+  }
+}
+.button{
+  width: 100%;
+  box-sizing: border-box;
+  font-family: @MerriBold;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 35px;
+  background: @link-color;
+  &--load{
+	background: @link-color url(../img/default.svg) no-repeat center center;
+	color: transparent;
+	&:hover, &:focus{
+	  background: @hover-color url(../img/default.svg) no-repeat center center;
+	}
+
+  }
+  &:hover, &:focus{
+	background: @hover-color;
+	outline: none;
+	cursor: pointer;
+  }
+}
+.input{
+  &--textarea{
+	height: 80px;
+  }
+  font-size: 18px;
+  font-family: @Merri;
+  color: #333333;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  resize: none;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  &--error{
+	border-color: #E93D3A;
+  }
+  &:focus, &:hover{
+	border-color: @pink;
+	outline: none;
+  }
+}

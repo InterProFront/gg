@@ -1,0 +1,156 @@
+.block-title{
+  font-family: @MerriBold;
+  font-size: 48px;
+  color: #333333;
+  &:before, &:after{
+    content: "•";
+    font-family: @MerriBold;
+    font-size: 48px;
+    color: #333333;
+    display: inline-block;
+  }
+  &:before{
+    padding-right: 15px;
+  }
+  &:after{
+    padding-left: 15px;
+  }
+
+}
+.link{
+  .link(@link-color, @link-border, @hover-color, @hover-border);
+}
+@media screen and (max-width: 768px) {
+  .block-title{
+    font-size: 28px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    &:before, &:after{
+      display: none;
+    }
+  }
+}
+
+.text-block{
+  h1, h2, h3, h4, h5{
+    font-family: @MerriBold;
+    font-weight: normal;
+    color: #333333;
+    line-height:1.2;
+  }
+  h4{
+    font-size: 24px;
+  }
+  p{
+    line-height: 1.5;
+    font-family: @Merri;
+    color: @gray;
+    font-size: 14px;
+  }
+}
+.seo-text{
+  h1, h2, h3, h4, h5{
+    font-family: @defaultFont;
+    color: #333333;
+    line-height:1.2;
+  }
+
+  h1{
+    font-size: 42px;
+  }
+  h2{
+    font-size: 36px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  h5{
+    font-size: 18px;
+  }
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    font-family: @defaultFont;
+  }
+
+  ul{
+    margin-left: 20px;
+    li{
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333333;
+      font-family: @defaultFont;
+    }
+  }
+
+  ol{
+    margin-left: 20px;
+    li{font-size: 16px;
+      line-height: 1.5;
+      color: #333333;
+      font-family: @defaultFont;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .seo-text{
+    &.seo-text--padding{
+      padding: 40px 50px;
+    }
+    padding: 40px 20px;
+    h1{
+      font-size: 36px;
+    }
+    h2{
+      font-size: 28px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    h4{
+      font-size: 20px;
+    }
+    h5{
+      font-size: 18px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333333;
+      font-family: @defaultFont;
+    }
+
+    ul{
+      margin-left: 20px;
+      li{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333333;
+        font-family: @defaultFont;
+      }
+    }
+
+    ol{
+      margin-left: 20px;
+      li{font-size: 16px;
+        line-height: 1.5;
+        color: #333333;
+        font-family: @defaultFont;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@media screen  and (max-width: 550px){
+  .seo-text{
+    &.seo-text--padding{
+      padding: 40px 20px;
+    }
+  }
+}
