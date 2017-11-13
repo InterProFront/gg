@@ -7,7 +7,7 @@
     <div class="box-body">
 
         <div class="form-group">
-            <label>Изображение (1120х520)</label>
+            <label>Изображение (1120х560)</label>
             <div class="dropzone">
                 <div class="file-input">
                     <div class="file-preview">
