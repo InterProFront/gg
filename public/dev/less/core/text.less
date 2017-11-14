@@ -75,6 +75,14 @@
     line-height: 1.5;
     color: #333333;
     font-family: @defaultFont;
+    a{
+      .link(@link-color, @link-border, @hover-color, @hover-border);
+    }
+  }
+  a{
+    font-size: inherit;
+    font-family: inherit;
+    .link(@link-color, @link-border, @hover-color, @hover-border);
   }
 
   ul{

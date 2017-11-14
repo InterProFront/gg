@@ -1,0 +1,54 @@
+@import "core/variable";
+@import "core/mixins";
+
+
+.note-editable {
+  *{
+	margin: 0;
+  }
+  h1, h2, h3, h4, h5 {
+	font-family: @MerriBold;
+	font-weight: normal;
+	color: #333333;
+	line-height: 1.2;
+  }
+  h4 {
+	font-size: 24px;
+  }
+  p, li {
+	line-height: 1.5;
+	font-family: @Merri;
+	color: @gray;
+	font-size: 14px;
+	a {
+	  .link(@link-color, @link-border, @hover-color, @hover-border);
+	}
+  }
+  a {
+	font-size: inherit;
+	font-family: inherit;
+	.link(@link-color, @link-border, @hover-color, @hover-border);
+  }
+  ul{
+	margin-left: 20px;
+	list-style-type: disc;
+	li{
+	  font-size: 16px;
+	  line-height: 1.5;
+	  color: #333333;
+	  font-family: @defaultFont;
+	}
+  }
+
+  ol{
+	list-style-type: decimal;
+	margin-left: 20px;
+	li{font-size: 16px;
+	  line-height: 1.5;
+	  color: #333333;
+	  font-family: @defaultFont;
+	  margin-bottom: 15px;
+	}
+  }
+
+}
