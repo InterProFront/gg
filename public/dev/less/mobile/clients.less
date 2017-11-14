@@ -9,22 +9,30 @@
 	  justify-content: space-between;
 	}
   }
-  .list-item{
-	&__text{
-	  max-width: 230px;
-	}
-  }
 }
 @media screen and (max-width: 600px){
   .clients{
 	&__clients-logo{
 	  justify-content: center;
+	  margin: 0 10px;
 	}
 	&__list{
 	  flex-wrap: wrap;
 	  max-width: 300px;
-	  justify-content: center;
+	  justify-content: flex-start;
+	  margin: 60px 20px 0;
 	}
-
+  }
+  .clients{
+	&__logo-wrap{
+	  max-width: ~'calc(50% - 10px)';
+	  margin: 5px;
+	}
+	&__logo{
+	  max-width: 100%;
+	}
+  }
+  .client{
+	max-width: 100%;
   }
 }
