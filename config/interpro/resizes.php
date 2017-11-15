@@ -7,7 +7,7 @@ return [
         'when_upload' => true
     ],
     'slider'   => [
-        'height' => 560,
+        'height' => 840,
     ],
     'about'   => [
         'height' => 480,
